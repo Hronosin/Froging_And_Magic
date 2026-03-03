@@ -1175,6 +1175,131 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "CoreofInfernalFurnace",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coreof_infernal_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/forging_and_magic/models/block/coreof_infernal_furnace.json",
+          "src/main/java/net/mcreator/forgingandmagic/block/entity/CoreofInfernalFurnaceBlockEntity.java",
+          "src/main/java/net/mcreator/forgingandmagic/block/CoreofInfernalFurnaceBlock.java",
+          "src/main/resources/assets/forging_and_magic/blockstates/coreof_infernal_furnace.json",
+          "src/main/resources/assets/forging_and_magic/models/item/coreof_infernal_furnace.json",
+          "src/main/resources/data/forging_and_magic/loot_table/blocks/coreof_infernal_furnace.json"
+        ]
+      }
+    },
+    {
+      "name": "FuelForInfernalFurnaceGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuel_for_infernal_furnace_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/FuelForInfernalFurnaceGUIProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "InfernalFurnaceGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infernal_furnace_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/world/inventory/InfernalFurnaceGUIMenu.java",
+          "src/main/java/net/mcreator/forgingandmagic/client/gui/InfernalFurnaceGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "CoreofInfernalFurnacePriObnovlieniiTika",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coreof_infernal_furnace_pri_obnovlienii_tika",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/CoreofInfernalFurnacePriObnovlieniiTikaProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CoreofInfernalFurnacePriShchielchkiePKMPoBloku",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coreof_infernal_furnace_pri_shchielchkie_pkm_po_bloku",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/CoreofInfernalFurnacePriShchielchkiePKMPoBlokuProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1265,7 +1390,9 @@
       "item.forging_and_magic.terralite_armor_boots": "Terralite Boots",
       "item.forging_and_magic.terralite_armor_chestplate": "Terralite Chestplate",
       "item.forging_and_magic.terralite_armor_leggings": "Terralite Leggings",
-      "item.forging_and_magic.soulof_miner": "Soul of Miner"
+      "item.forging_and_magic.soulof_miner": "Soul of Miner",
+      "block.forging_and_magic.coreof_infernal_furnace": "Core of Infernal Furnace",
+      "gui.forging_and_magic.infernal_furnace_gui.label_fuel_0": "Fuel: 0"
     }
   },
   "metadata": {

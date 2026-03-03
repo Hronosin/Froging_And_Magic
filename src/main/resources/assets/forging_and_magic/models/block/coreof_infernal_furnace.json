@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "forging_and_magic:block/oaapra",
+    "particle": "forging_and_magic:block/oaapra"
+  },
+  "render_type": "solid"
+}

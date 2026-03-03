@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.forgingandmagic.block.entity.CoreofInfernalFurnaceBlockEntity;
 import net.mcreator.forgingandmagic.block.entity.AquatintAnvilBlockEntity;
 import net.mcreator.forgingandmagic.ForgingAndMagicMod;
 
@@ -23,6 +24,8 @@ import net.mcreator.forgingandmagic.ForgingAndMagicMod;
 public class ForgingAndMagicModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, ForgingAndMagicMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AquatintAnvilBlockEntity>> AQUATINT_ANVIL = register("aquatint_anvil", ForgingAndMagicModBlocks.AQUATINT_ANVIL, AquatintAnvilBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoreofInfernalFurnaceBlockEntity>> COREOF_INFERNAL_FURNACE = register("coreof_infernal_furnace", ForgingAndMagicModBlocks.COREOF_INFERNAL_FURNACE,
+			CoreofInfernalFurnaceBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -33,5 +36,6 @@ public class ForgingAndMagicModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, AQUATINT_ANVIL.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, COREOF_INFERNAL_FURNACE.get(), SidedInvWrapper::new);
 	}
 }

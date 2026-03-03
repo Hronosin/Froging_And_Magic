@@ -18,17 +18,14 @@ import java.util.List;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.DataResult;
-import com.mojang.serialization.Codec;
 
 public class AquatintAnvilRecipeTypeRecipe implements Recipe<RecipeInput> {
 	private final List<ItemStack> output;
 	private final NonNullList<Ingredient> recipeItems;
-	private final List<Integer> integers;
 
-	public AquatintAnvilRecipeTypeRecipe(List<ItemStack> output, NonNullList<Ingredient> recipeItems, List<Integer> integers) {
+	public AquatintAnvilRecipeTypeRecipe(List<ItemStack> output, NonNullList<Ingredient> recipeItems) {
 		this.output = output;
 		this.recipeItems = recipeItems;
-		this.integers = integers;
 	}
 
 	@Override
@@ -37,10 +34,6 @@ public class AquatintAnvilRecipeTypeRecipe implements Recipe<RecipeInput> {
 			return false;
 		}
 		return false;
-	}
-
-	public List<Integer> integers() {
-		return this.integers;
 	}
 
 	@Override
@@ -94,7 +87,7 @@ public class AquatintAnvilRecipeTypeRecipe implements Recipe<RecipeInput> {
 					} else {
 						return DataResult.success(NonNullList.of(Ingredient.EMPTY, aingredient));
 					}
-				}, DataResult::success).forGetter(recipe -> recipe.recipeItems), Codec.INT.listOf().fieldOf("integers").forGetter(recipe -> recipe.integers)).apply(builder, AquatintAnvilRecipeTypeRecipe::new));
+				}, DataResult::success).forGetter(recipe -> recipe.recipeItems)).apply(builder, AquatintAnvilRecipeTypeRecipe::new));
 		public static final StreamCodec<RegistryFriendlyByteBuf, AquatintAnvilRecipeTypeRecipe> STREAM_CODEC = StreamCodec.of(Serializer::toNetwork, Serializer::fromNetwork);
 
 		@Override
@@ -112,9 +105,7 @@ public class AquatintAnvilRecipeTypeRecipe implements Recipe<RecipeInput> {
 			inputs.replaceAll(ingredients -> Ingredient.CONTENTS_STREAM_CODEC.decode(buf));
 			List<ItemStack> outputs = NonNullList.withSize(buf.readVarInt(), ItemStack.EMPTY);
 			outputs.replaceAll(results -> ItemStack.STREAM_CODEC.decode(buf));
-			List<Integer> numbers = NonNullList.withSize(buf.readVarInt(), 0);
-			numbers.replaceAll(num -> buf.readVarInt());
-			return new AquatintAnvilRecipeTypeRecipe(outputs, inputs, numbers);
+			return new AquatintAnvilRecipeTypeRecipe(outputs, inputs);
 		}
 
 		private static void toNetwork(RegistryFriendlyByteBuf buf, AquatintAnvilRecipeTypeRecipe recipe) {
@@ -128,10 +119,6 @@ public class AquatintAnvilRecipeTypeRecipe implements Recipe<RecipeInput> {
 			buf.writeVarInt(recipe.getResultItems().size());
 			for (ItemStack itemstack : recipe.getResultItems()) {
 				ItemStack.STREAM_CODEC.encode(buf, itemstack);
-			}
-			buf.writeVarInt(recipe.integers().size());
-			for (Integer num : recipe.integers()) {
-				buf.writeVarInt(num);
 			}
 		}
 	}

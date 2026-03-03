@@ -14,9 +14,9 @@
       }
     ],
     "enableCraftingtable": true,
-    "enableIntList": true,
+    "enableIntList": false,
     "enableStringList": false,
-    "disableJeiBorder": false,
+    "disableJeiBorder": true,
     "title": "Aquatint Anvil Recipe Type",
     "slotList": [
       {

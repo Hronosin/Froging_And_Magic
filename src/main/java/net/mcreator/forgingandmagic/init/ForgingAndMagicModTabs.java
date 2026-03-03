@@ -58,6 +58,7 @@ public class ForgingAndMagicModTabs {
 			tabData.accept(ForgingAndMagicModItems.TERRALITE_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(ForgingAndMagicModBlocks.AQUATINT_ANVIL.get().asItem());
+			tabData.accept(ForgingAndMagicModBlocks.COREOF_INFERNAL_FURNACE.get().asItem());
 		}
 	}
 }

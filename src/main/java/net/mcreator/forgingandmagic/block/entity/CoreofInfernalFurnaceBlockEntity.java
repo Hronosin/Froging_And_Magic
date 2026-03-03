@@ -16,7 +16,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.forgingandmagic.world.inventory.AquatintAnvilGUIMenu;
+import net.mcreator.forgingandmagic.world.inventory.InfernalFurnaceGUIMenu;
 import net.mcreator.forgingandmagic.init.ForgingAndMagicModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -25,11 +25,11 @@ import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
 
-public class AquatintAnvilBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.withSize(10, ItemStack.EMPTY);
+public class CoreofInfernalFurnaceBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(16, ItemStack.EMPTY);
 
-	public AquatintAnvilBlockEntity(BlockPos position, BlockState state) {
-		super(ForgingAndMagicModBlockEntities.AQUATINT_ANVIL.get(), position, state);
+	public CoreofInfernalFurnaceBlockEntity(BlockPos position, BlockState state) {
+		super(ForgingAndMagicModBlockEntities.COREOF_INFERNAL_FURNACE.get(), position, state);
 	}
 
 	@Override
@@ -73,7 +73,7 @@ public class AquatintAnvilBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("aquatint_anvil");
+		return Component.literal("coreof_infernal_furnace");
 	}
 
 	@Override
@@ -83,12 +83,12 @@ public class AquatintAnvilBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new AquatintAnvilGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new InfernalFurnaceGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Aquatint Anvil");
+		return Component.literal("Core of Infernal Furnace");
 	}
 
 	@Override
@@ -103,8 +103,6 @@ public class AquatintAnvilBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
-		if (index == 9)
-			return false;
 		return true;
 	}
 
@@ -120,24 +118,6 @@ public class AquatintAnvilBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
-		if (index == 0)
-			return false;
-		if (index == 1)
-			return false;
-		if (index == 2)
-			return false;
-		if (index == 3)
-			return false;
-		if (index == 4)
-			return false;
-		if (index == 5)
-			return false;
-		if (index == 6)
-			return false;
-		if (index == 7)
-			return false;
-		if (index == 8)
-			return false;
 		return true;
 	}
 }

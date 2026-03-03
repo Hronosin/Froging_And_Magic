@@ -15,6 +15,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.forgingandmagic.world.inventory.InfernalFurnaceGUIMenu;
 import net.mcreator.forgingandmagic.world.inventory.AquatintAnvilGUIMenu;
 import net.mcreator.forgingandmagic.network.MenuStateUpdateMessage;
 import net.mcreator.forgingandmagic.ForgingAndMagicMod;
@@ -24,6 +25,7 @@ import java.util.Map;
 public class ForgingAndMagicModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, ForgingAndMagicMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<AquatintAnvilGUIMenu>> AQUATINT_ANVIL_GUI = REGISTRY.register("aquatint_anvil_gui", () -> IMenuTypeExtension.create(AquatintAnvilGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<InfernalFurnaceGUIMenu>> INFERNAL_FURNACE_GUI = REGISTRY.register("infernal_furnace_gui", () -> IMenuTypeExtension.create(InfernalFurnaceGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

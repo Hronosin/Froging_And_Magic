@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "forging_and_magic:blocks/coreof_infernal_furnace",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "forging_and_magic:coreof_infernal_furnace"
+        }
+      ]
+    }
+  ]
+}

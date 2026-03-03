@@ -20,7 +20,6 @@ import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.constants.VanillaTypes;
 
 import java.util.List;
-import java.util.ArrayList;
 
 public class AquatintAnvilRecipeTypeRecipeCategory implements IRecipeCategory<AquatintAnvilRecipeTypeRecipe> {
 	public final static ResourceLocation UID = ResourceLocation.parse("forging_and_magic:aquatint_anvil_recipe_type");
@@ -60,6 +59,11 @@ public class AquatintAnvilRecipeTypeRecipeCategory implements IRecipeCategory<Aq
 	}
 
 	@Override
+	public boolean needsRecipeBorder() {
+		return false;
+	}
+
+	@Override
 	public void draw(AquatintAnvilRecipeTypeRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
 		this.background.draw(guiGraphics);
 
@@ -67,48 +71,20 @@ public class AquatintAnvilRecipeTypeRecipeCategory implements IRecipeCategory<Aq
 
 	@Override
 	public void setRecipe(IRecipeLayoutBuilder builder, AquatintAnvilRecipeTypeRecipe recipe, IFocusGroup focuses) {
-		List<ItemStack> stacks = new ArrayList<>();
 		List<ItemStack> recipeOutputs = recipe.getResultItems();
 		List<ItemStack> actualOutputs = NonNullList.withSize(1, ItemStack.EMPTY);
 		for (int i = 0; i < recipeOutputs.size(); i++) {
 			actualOutputs.set(i, recipeOutputs.get(i));
 		}
-		stacks.clear();
-		for (ItemStack item : (List<ItemStack>) List.of(recipe.getIngredients().get(0).getItems()))
-			stacks.add(new ItemStack(item.getItem(), recipe.integers().get(0)));
-		builder.addSlot(RecipeIngredientRole.INPUT, 208, 25).addItemStacks(stacks);
-		stacks.clear();
-		for (ItemStack item : (List<ItemStack>) List.of(recipe.getIngredients().get(1).getItems()))
-			stacks.add(new ItemStack(item.getItem(), recipe.integers().get(1)));
-		builder.addSlot(RecipeIngredientRole.INPUT, 271, 25).addItemStacks(stacks);
-		stacks.clear();
-		for (ItemStack item : (List<ItemStack>) List.of(recipe.getIngredients().get(2).getItems()))
-			stacks.add(new ItemStack(item.getItem(), recipe.integers().get(2)));
-		builder.addSlot(RecipeIngredientRole.INPUT, 334, 25).addItemStacks(stacks);
-		stacks.clear();
-		for (ItemStack item : (List<ItemStack>) List.of(recipe.getIngredients().get(3).getItems()))
-			stacks.add(new ItemStack(item.getItem(), recipe.integers().get(3)));
-		builder.addSlot(RecipeIngredientRole.INPUT, 334, 53).addItemStacks(stacks);
-		stacks.clear();
-		for (ItemStack item : (List<ItemStack>) List.of(recipe.getIngredients().get(4).getItems()))
-			stacks.add(new ItemStack(item.getItem(), recipe.integers().get(4)));
-		builder.addSlot(RecipeIngredientRole.INPUT, 334, 81).addItemStacks(stacks);
-		stacks.clear();
-		for (ItemStack item : (List<ItemStack>) List.of(recipe.getIngredients().get(5).getItems()))
-			stacks.add(new ItemStack(item.getItem(), recipe.integers().get(5)));
-		builder.addSlot(RecipeIngredientRole.INPUT, 271, 81).addItemStacks(stacks);
-		stacks.clear();
-		for (ItemStack item : (List<ItemStack>) List.of(recipe.getIngredients().get(6).getItems()))
-			stacks.add(new ItemStack(item.getItem(), recipe.integers().get(6)));
-		builder.addSlot(RecipeIngredientRole.INPUT, 208, 81).addItemStacks(stacks);
-		stacks.clear();
-		for (ItemStack item : (List<ItemStack>) List.of(recipe.getIngredients().get(7).getItems()))
-			stacks.add(new ItemStack(item.getItem(), recipe.integers().get(7)));
-		builder.addSlot(RecipeIngredientRole.INPUT, 208, 53).addItemStacks(stacks);
-		stacks.clear();
-		for (ItemStack item : (List<ItemStack>) List.of(recipe.getIngredients().get(8).getItems()))
-			stacks.add(new ItemStack(item.getItem(), recipe.integers().get(8)));
-		builder.addSlot(RecipeIngredientRole.INPUT, 271, 53).addItemStacks(stacks);
+		builder.addSlot(RecipeIngredientRole.INPUT, 208, 25).addIngredients(recipe.getIngredients().get(0));
+		builder.addSlot(RecipeIngredientRole.INPUT, 271, 25).addIngredients(recipe.getIngredients().get(1));
+		builder.addSlot(RecipeIngredientRole.INPUT, 334, 25).addIngredients(recipe.getIngredients().get(2));
+		builder.addSlot(RecipeIngredientRole.INPUT, 334, 53).addIngredients(recipe.getIngredients().get(3));
+		builder.addSlot(RecipeIngredientRole.INPUT, 334, 81).addIngredients(recipe.getIngredients().get(4));
+		builder.addSlot(RecipeIngredientRole.INPUT, 271, 81).addIngredients(recipe.getIngredients().get(5));
+		builder.addSlot(RecipeIngredientRole.INPUT, 208, 81).addIngredients(recipe.getIngredients().get(6));
+		builder.addSlot(RecipeIngredientRole.INPUT, 208, 53).addIngredients(recipe.getIngredients().get(7));
+		builder.addSlot(RecipeIngredientRole.INPUT, 271, 53).addIngredients(recipe.getIngredients().get(8));
 		builder.addSlot(RecipeIngredientRole.OUTPUT, 271, 116).addItemStack(actualOutputs.get(9));
 	}
 }
