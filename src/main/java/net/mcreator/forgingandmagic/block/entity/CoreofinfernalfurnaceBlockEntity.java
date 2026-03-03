@@ -25,11 +25,11 @@ import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
 
-public class CoreofInfernalFurnaceBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class CoreofinfernalfurnaceBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.withSize(16, ItemStack.EMPTY);
 
-	public CoreofInfernalFurnaceBlockEntity(BlockPos position, BlockState state) {
-		super(ForgingAndMagicModBlockEntities.COREOF_INFERNAL_FURNACE.get(), position, state);
+	public CoreofinfernalfurnaceBlockEntity(BlockPos position, BlockState state) {
+		super(ForgingAndMagicModBlockEntities.COREOFINFERNALFURNACE.get(), position, state);
 	}
 
 	@Override
@@ -73,12 +73,7 @@ public class CoreofInfernalFurnaceBlockEntity extends RandomizableContainerBlock
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("coreof_infernal_furnace");
-	}
-
-	@Override
-	public int getMaxStackSize() {
-		return 64;
+		return Component.literal("coreofinfernalfurnace");
 	}
 
 	@Override
@@ -118,6 +113,38 @@ public class CoreofInfernalFurnaceBlockEntity extends RandomizableContainerBlock
 
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
+		if (index == 0)
+			return false;
+		if (index == 1)
+			return false;
+		if (index == 2)
+			return false;
+		if (index == 3)
+			return false;
+		if (index == 4)
+			return false;
+		if (index == 5)
+			return false;
+		if (index == 6)
+			return false;
+		if (index == 7)
+			return false;
+		if (index == 8)
+			return false;
+		if (index == 9)
+			return false;
+		if (index == 10)
+			return false;
+		if (index == 11)
+			return false;
+		if (index == 12)
+			return false;
+		if (index == 13)
+			return false;
+		if (index == 14)
+			return false;
+		if (index == 15)
+			return false;
 		return true;
 	}
 }

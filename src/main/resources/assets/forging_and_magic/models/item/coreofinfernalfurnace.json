@@ -1,5 +1,5 @@
 {
-  "parent": "forging_and_magic:block/coreof_infernal_furnace",
+  "parent": "forging_and_magic:block/coreofinfernalfurnace",
   "display": {
     "thirdperson": {
       "rotation": [

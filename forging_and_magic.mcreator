@@ -1177,23 +1177,6 @@
       }
     },
     {
-      "name": "CoreofInfernalFurnace",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "coreof_infernal_furnace",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/forging_and_magic/models/block/coreof_infernal_furnace.json",
-          "src/main/java/net/mcreator/forgingandmagic/block/entity/CoreofInfernalFurnaceBlockEntity.java",
-          "src/main/java/net/mcreator/forgingandmagic/block/CoreofInfernalFurnaceBlock.java",
-          "src/main/resources/assets/forging_and_magic/blockstates/coreof_infernal_furnace.json",
-          "src/main/resources/assets/forging_and_magic/models/item/coreof_infernal_furnace.json",
-          "src/main/resources/data/forging_and_magic/loot_table/blocks/coreof_infernal_furnace.json"
-        ]
-      }
-    },
-    {
       "name": "FuelForInfernalFurnaceGUI",
       "type": "procedure",
       "compiles": true,
@@ -1300,6 +1283,23 @@
           "src/main/java/net/mcreator/forgingandmagic/procedures/CoreofInfernalFurnacePriShchielchkiePKMPoBlokuProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Coreofinfernalfurnace",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coreofinfernalfurnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/loot_table/blocks/coreofinfernalfurnace.json",
+          "src/main/resources/assets/forging_and_magic/blockstates/coreofinfernalfurnace.json",
+          "src/main/java/net/mcreator/forgingandmagic/block/entity/CoreofinfernalfurnaceBlockEntity.java",
+          "src/main/resources/assets/forging_and_magic/models/item/coreofinfernalfurnace.json",
+          "src/main/java/net/mcreator/forgingandmagic/block/CoreofinfernalfurnaceBlock.java",
+          "src/main/resources/assets/forging_and_magic/models/block/coreofinfernalfurnace.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1391,8 +1391,8 @@
       "item.forging_and_magic.terralite_armor_chestplate": "Terralite Chestplate",
       "item.forging_and_magic.terralite_armor_leggings": "Terralite Leggings",
       "item.forging_and_magic.soulof_miner": "Soul of Miner",
-      "block.forging_and_magic.coreof_infernal_furnace": "Core of Infernal Furnace",
-      "gui.forging_and_magic.infernal_furnace_gui.label_fuel_0": "Fuel: 0"
+      "gui.forging_and_magic.infernal_furnace_gui.label_fuel_0": "Fuel: 0",
+      "block.forging_and_magic.coreofinfernalfurnace": "Core of Infernal Furnace"
     }
   },
   "metadata": {

@@ -29,6 +29,6 @@
   "item.forging_and_magic.terralite_armor_chestplate": "Terralite Chestplate",
   "item.forging_and_magic.terralite_armor_leggings": "Terralite Leggings",
   "item.forging_and_magic.soulof_miner": "Soul of Miner",
-  "block.forging_and_magic.coreof_infernal_furnace": "Core of Infernal Furnace",
-  "gui.forging_and_magic.infernal_furnace_gui.label_fuel_0": "Fuel: 0"
+  "gui.forging_and_magic.infernal_furnace_gui.label_fuel_0": "Fuel: 0",
+  "block.forging_and_magic.coreofinfernalfurnace": "Core of Infernal Furnace"
 }

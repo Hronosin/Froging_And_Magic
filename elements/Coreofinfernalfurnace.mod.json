@@ -43,14 +43,14 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 5.0,
+    "hardness": 6.0,
     "resistance": 1000.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "hasBlockItem": true,
     "maxStackSize": 64,
-    "rarity": "UNCOMMON",
-    "immuneToFire": true,
+    "rarity": "COMMON",
+    "immuneToFire": false,
     "creativeTabs": [
       {
         "value": "TRANSPORTATION"
@@ -97,7 +97,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "ANCIENT_DEBRIS"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -127,18 +127,35 @@
     "guiBoundTo": "InfernalFurnaceGUI",
     "openGUIOnRightClick": false,
     "inventorySize": 16,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
-    "inventoryInSlotIDs": [],
+    "inventoryInSlotIDs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
     "hasEnergyStorage": false,
     "energyInitial": 0,
     "energyCapacity": 400000,
     "energyMaxReceive": 200,
     "energyMaxExtract": 200,
     "isFluidTank": false,
-    "fluidCapacity": 16000,
+    "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
       "name": "CoreofInfernalFurnacePriShchielchkiePKMPoBloku"

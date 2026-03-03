@@ -44,7 +44,7 @@ public class ForgingAndMagicModItems {
 	public static final DeferredItem<Item> TERRALITE_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> TERRALITE_ARMOR_BOOTS;
 	public static final DeferredItem<Item> SOULOF_MINER;
-	public static final DeferredItem<Item> COREOF_INFERNAL_FURNACE;
+	public static final DeferredItem<Item> COREOFINFERNALFURNACE;
 	static {
 		AQUATINT_INGOT = REGISTRY.register("aquatint_ingot", AquatintIngotItem::new);
 		AQUATINT_ORE = block(ForgingAndMagicModBlocks.AQUATINT_ORE);
@@ -73,7 +73,7 @@ public class ForgingAndMagicModItems {
 		TERRALITE_ARMOR_LEGGINGS = REGISTRY.register("terralite_armor_leggings", TerraliteArmorItem.Leggings::new);
 		TERRALITE_ARMOR_BOOTS = REGISTRY.register("terralite_armor_boots", TerraliteArmorItem.Boots::new);
 		SOULOF_MINER = REGISTRY.register("soulof_miner", SoulofMinerItem::new);
-		COREOF_INFERNAL_FURNACE = block(ForgingAndMagicModBlocks.COREOF_INFERNAL_FURNACE, new Item.Properties().rarity(Rarity.UNCOMMON).fireResistant());
+		COREOFINFERNALFURNACE = block(ForgingAndMagicModBlocks.COREOFINFERNALFURNACE);
 	}
 
 	// Start of user code block custom items

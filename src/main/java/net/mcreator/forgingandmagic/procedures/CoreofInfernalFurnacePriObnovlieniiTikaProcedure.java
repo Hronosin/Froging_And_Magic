@@ -18,7 +18,7 @@ import net.mcreator.forgingandmagic.init.ForgingAndMagicModBlocks;
 
 public class CoreofInfernalFurnacePriObnovlieniiTikaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == ForgingAndMagicModBlocks.COREOF_INFERNAL_FURNACE.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == ForgingAndMagicModBlocks.COREOFINFERNALFURNACE.get()) {
 			if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.CRYING_OBSIDIAN && (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.CRYING_OBSIDIAN
 					&& (world.getBlockState(BlockPos.containing(x + 1, y + 1, z))).getBlock() == Blocks.NETHER_BRICKS && (world.getBlockState(BlockPos.containing(x - 1, y - 1, z))).getBlock() == Blocks.ANCIENT_DEBRIS
 					&& (world.getBlockState(BlockPos.containing(x - 1, y + 1, z))).getBlock() == Blocks.ANCIENT_DEBRIS && (world.getBlockState(BlockPos.containing(x + 1, y - 1, z))).getBlock() == Blocks.NETHER_BRICKS

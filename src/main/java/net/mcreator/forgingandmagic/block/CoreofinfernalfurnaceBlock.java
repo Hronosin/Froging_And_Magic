@@ -25,11 +25,11 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.forgingandmagic.procedures.CoreofInfernalFurnacePriShchielchkiePKMPoBlokuProcedure;
 import net.mcreator.forgingandmagic.procedures.CoreofInfernalFurnacePriObnovlieniiTikaProcedure;
-import net.mcreator.forgingandmagic.block.entity.CoreofInfernalFurnaceBlockEntity;
+import net.mcreator.forgingandmagic.block.entity.CoreofinfernalfurnaceBlockEntity;
 
-public class CoreofInfernalFurnaceBlock extends Block implements EntityBlock {
-	public CoreofInfernalFurnaceBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).sound(SoundType.ANCIENT_DEBRIS).strength(5f, 1000f).lightLevel(s -> 4).instrument(NoteBlockInstrument.XYLOPHONE));
+public class CoreofinfernalfurnaceBlock extends Block implements EntityBlock {
+	public CoreofinfernalfurnaceBlock() {
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).sound(SoundType.METAL).strength(6f, 1000f).lightLevel(s -> 4).instrument(NoteBlockInstrument.XYLOPHONE));
 	}
 
 	@Override
@@ -65,7 +65,7 @@ public class CoreofInfernalFurnaceBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new CoreofInfernalFurnaceBlockEntity(pos, state);
+		return new CoreofinfernalfurnaceBlockEntity(pos, state);
 	}
 
 	@Override
@@ -79,7 +79,7 @@ public class CoreofInfernalFurnaceBlock extends Block implements EntityBlock {
 	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
 		if (state.getBlock() != newState.getBlock()) {
 			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof CoreofInfernalFurnaceBlockEntity be) {
+			if (blockEntity instanceof CoreofinfernalfurnaceBlockEntity be) {
 				Containers.dropContents(world, pos, be);
 				world.updateNeighbourForOutputSignal(pos, this);
 			}
@@ -95,7 +95,7 @@ public class CoreofInfernalFurnaceBlock extends Block implements EntityBlock {
 	@Override
 	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
 		BlockEntity tileentity = world.getBlockEntity(pos);
-		if (tileentity instanceof CoreofInfernalFurnaceBlockEntity be)
+		if (tileentity instanceof CoreofinfernalfurnaceBlockEntity be)
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;

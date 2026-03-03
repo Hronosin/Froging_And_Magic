@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "forging_and_magic:blocks/coreof_infernal_furnace",
+  "random_sequence": "forging_and_magic:blocks/coreofinfernalfurnace",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "forging_and_magic:coreof_infernal_furnace"
+          "name": "forging_and_magic:coreofinfernalfurnace"
         }
       ]
     }
