@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "def"
+  ],
+  "key": {
+    "a": {
+      "item": "forging_and_magic:aquatint_ingot"
+    },
+    "b": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "c": {
+      "item": "minecraft:anvil"
+    },
+    "d": {
+      "item": "minecraft:smithing_table"
+    },
+    "e": {
+      "item": "minecraft:grindstone"
+    },
+    "f": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "result": {
+    "id": "forging_and_magic:aquatint_anvil",
+    "count": 1
+  }
+}

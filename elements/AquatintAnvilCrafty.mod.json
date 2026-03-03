@@ -1,0 +1,56 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:AquatintOre"
+      },
+      {
+        "value": "CUSTOM:AquatintIngot"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AquatintIngot"
+      },
+      {
+        "value": "CUSTOM:AquatintIngot"
+      },
+      {
+        "value": "CUSTOM:AquatintIngot"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": "Blocks.ANVIL#0"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": "Blocks.SMITHING_TABLE"
+      },
+      {
+        "value": "Blocks.GRINDSTONE"
+      },
+      {
+        "value": "Blocks.CRAFTING_TABLE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AquatintAnvil"
+    },
+    "name": "aquatint_anvil_crafty",
+    "namespace": "mod"
+  }
+}

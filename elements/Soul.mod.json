@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "curiosslot",
+  "definition": {
+    "texture": "heheh.png",
+    "name": "Soul",
+    "amount": 2,
+    "modelToggling": false,
+    "changeOrder": false,
+    "slotOrder": 0
+  }
+}

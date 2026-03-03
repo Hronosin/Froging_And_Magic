@@ -1,0 +1,49 @@
+{
+  "type": "forging_and_magic:aquatint_anvil_recipe_type",
+  "ingredients": [
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "forging_and_magic:aquatint_ingot"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "minecraft:rabbit_foot"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "forging_and_magic:aquatint_ingot"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "minecraft:rabbit_foot"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "integers": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "forging_and_magic:soul_of_speed",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "forging_and_magic:aquatint_ingot"
+    }
+  },
+  "result": {
+    "id": "forging_and_magic:aquatint_block",
+    "count": 1
+  }
+}

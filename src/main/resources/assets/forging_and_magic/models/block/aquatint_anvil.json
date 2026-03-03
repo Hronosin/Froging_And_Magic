@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/trial_spawner_top_inactive",
+    "up": "minecraft:block/vault_top",
+    "north": "minecraft:block/smithing_table_top",
+    "east": "minecraft:block/smithing_table_top",
+    "south": "minecraft:block/smithing_table_top",
+    "west": "minecraft:block/smithing_table_top",
+    "particle": "minecraft:block/trial_spawner_top_inactive"
+  },
+  "render_type": "cutout"
+}

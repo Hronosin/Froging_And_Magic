@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:TerraliteIngot"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TerraliteIngot"
+      },
+      {
+        "value": "CUSTOM:AquatintArmor.boots"
+      },
+      {
+        "value": "CUSTOM:TerraliteIngot"
+      },
+      {
+        "value": "CUSTOM:TerraliteIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:TerraliteIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TerraliteArmor.boots"
+    },
+    "name": "terralite_armor_boots_recipe",
+    "namespace": "mod"
+  }
+}

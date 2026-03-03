@@ -1,0 +1,1339 @@
+{
+  "mod_elements": [
+    {
+      "name": "AquatintIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/item/AquatintIngotItem.java",
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "AquatintOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_ore.json",
+          "src/main/java/net/mcreator/forgingandmagic/block/AquatintOreBlock.java",
+          "src/main/resources/data/forging_and_magic/worldgen/placed_feature/aquatint_ore.json",
+          "src/main/resources/assets/forging_and_magic/blockstates/aquatint_ore.json",
+          "src/main/resources/data/forging_and_magic/worldgen/configured_feature/aquatint_ore.json",
+          "src/main/resources/data/forging_and_magic/loot_table/blocks/aquatint_ore.json",
+          "src/main/resources/assets/forging_and_magic/models/block/aquatint_ore.json",
+          "src/main/resources/data/forging_and_magic/neoforge/biome_modifier/aquatint_ore_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "AquatintBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/block/AquatintBlockBlock.java",
+          "src/main/resources/assets/forging_and_magic/models/block/aquatint_block.json",
+          "src/main/resources/data/forging_and_magic/loot_table/blocks/aquatint_block.json",
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_block.json",
+          "src/main/resources/assets/forging_and_magic/blockstates/aquatint_block.json"
+        ]
+      }
+    },
+    {
+      "name": "AquatintOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_ore_block_recipe.json",
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_ore_block_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/Blocks"
+    },
+    {
+      "name": "AquatintBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_block_ore_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_block_ore_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "AquatintOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_ore_smelting.json",
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_ore_smelting.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "AquatintPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/item/AquatintPickaxeItem.java",
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_pickaxe.json"
+        ]
+      }
+    },
+    {
+      "name": "AquatintAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_axe.json",
+          "src/main/java/net/mcreator/forgingandmagic/item/AquatintAxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AquatintSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_sword.json",
+          "src/main/java/net/mcreator/forgingandmagic/item/AquatintSwordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AquatintShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/item/AquatintShovelItem.java",
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_shovel.json"
+        ]
+      }
+    },
+    {
+      "name": "AquatintHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_hoe.json",
+          "src/main/java/net/mcreator/forgingandmagic/item/AquatintHoeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AquatintPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_pickaxe_recipe.json",
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "AquatintAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_axe_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_axe_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "AquatintSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_sword_recipe.json",
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_sword_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "AquatintShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_shovel_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "AquatintHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_hoe_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "AquatintArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/item/AquatintArmorItem.java",
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_armor_chestplate.json",
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_armor_leggings.json",
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_armor_boots.json",
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_armor_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "AquatintArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_armor_helmet_recipe.json",
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/arrmor"
+    },
+    {
+      "name": "AquatintArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_armor_chestplate_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/arrmor"
+    },
+    {
+      "name": "AquatintArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_armor_leggings_recipe.json",
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/arrmor"
+    },
+    {
+      "name": "AquatintArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_armor_boots_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/arrmor"
+    },
+    {
+      "name": "AquatintPickaxePriRazrushieniiBlokaInstrumientom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_pickaxe_pri_razrushienii_bloka_instrumientom",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/AquatintPickaxePriRazrushieniiBlokaInstrumientomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AquatintAxePriRazrushieniiBlokaInstrumientom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_axe_pri_razrushienii_bloka_instrumientom",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/AquatintAxePriRazrushieniiBlokaInstrumientomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AquatintAxePriUdariePoSushchnostiInstrumientom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_axe_pri_udarie_po_sushchnosti_instrumientom",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/AquatintAxePriUdariePoSushchnostiInstrumientomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AquatintShovelPriRazrushieniiBlokaInstrumientom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_shovel_pri_razrushienii_bloka_instrumientom",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/AquatintShovelPriRazrushieniiBlokaInstrumientomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AquatintHoePriShchielchkiePKM",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_hoe_pri_shchielchkie_pkm",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/AquatintHoePriShchielchkiePKMProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Soul",
+      "type": "curiosslot",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/curios/slots/soul.json",
+          "src/main/resources/data/curios/tags/item/soul.json",
+          "src/main/resources/data/forging_and_magic/curios/entities/soul.json"
+        ]
+      }
+    },
+    {
+      "name": "AquatintAnvilGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_anvil_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/world/inventory/AquatintAnvilGUIMenu.java",
+          "src/main/java/net/mcreator/forgingandmagic/network/AquatintAnvilGUIButtonMessage.java",
+          "src/main/java/net/mcreator/forgingandmagic/client/gui/AquatintAnvilGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "AquatintAnvil",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_anvil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/forging_and_magic/models/block/aquatint_anvil.json",
+          "src/main/java/net/mcreator/forgingandmagic/block/entity/AquatintAnvilBlockEntity.java",
+          "src/main/resources/assets/forging_and_magic/models/item/aquatint_anvil.json",
+          "src/main/resources/assets/forging_and_magic/blockstates/aquatint_anvil.json",
+          "src/main/java/net/mcreator/forgingandmagic/block/AquatintAnvilBlock.java",
+          "src/main/resources/data/forging_and_magic/loot_table/blocks/aquatint_anvil.json"
+        ]
+      }
+    },
+    {
+      "name": "SoulOfSpeed",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_of_speed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/item/SoulOfSpeedItem.java",
+          "src/main/resources/assets/forging_and_magic/models/item/soul_of_speed.json"
+        ]
+      }
+    },
+    {
+      "name": "Souls",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "souls",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "SoulOfSpeedCuriosBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_of_speed_curios_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/SoulOfSpeedCuriosBaubleIsEquippedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulOfSpeedCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_of_speed_curios",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "SoulOfSpeedCuriosBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_of_speed_curios_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/SoulOfSpeedCuriosBaubleIsUnequippedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulOfSpeedCuriosWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_of_speed_curios_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/SoulOfSpeedCuriosWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AquatintAnvilCraft",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_anvil_craft",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/AquatintAnvilCraftProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AquatintAnvilCrafty",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_anvil_crafty",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/aquatint_anvil_crafty.json",
+          "src/main/resources/data/forging_and_magic/recipe/aquatint_anvil_crafty.json"
+        ]
+      },
+      "path": "~/Crafts/Blocks"
+    },
+    {
+      "name": "AquatintAnvilRecipeType",
+      "type": "jeirecipetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquatint_anvil_recipe_type",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/jei_recipes/AquatintAnvilRecipeTypeRecipeCategory.java",
+          "src/main/java/net/mcreator/forgingandmagic/jei_recipes/AquatintAnvilRecipeTypeRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulofSpeeed",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulof_speeed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/soulof_speeed.json"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/item/TerraliteIngotItem.java",
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/block/TerraliteOreBlock.java",
+          "src/main/resources/data/forging_and_magic/loot_table/blocks/terralite_ore.json",
+          "src/main/resources/data/forging_and_magic/worldgen/placed_feature/terralite_ore.json",
+          "src/main/resources/data/forging_and_magic/worldgen/configured_feature/terralite_ore.json",
+          "src/main/resources/assets/forging_and_magic/blockstates/terralite_ore.json",
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_ore.json",
+          "src/main/resources/data/forging_and_magic/neoforge/biome_modifier/terralite_ore_biome_modifier.json",
+          "src/main/resources/assets/forging_and_magic/models/block/terralite_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/block/TerraliteBlockBlock.java",
+          "src/main/resources/data/forging_and_magic/loot_table/blocks/terralite_block.json",
+          "src/main/resources/assets/forging_and_magic/blockstates/terralite_block.json",
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_block.json",
+          "src/main/resources/assets/forging_and_magic/models/block/terralite_block.json"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/terralite_ore_block_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_ore_block_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/Blocks"
+    },
+    {
+      "name": "TerraliteBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_block_ore_recipe.json",
+          "src/main/resources/data/forging_and_magic/recipe/terralite_block_ore_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "TerraliteOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_ore_smelting.json",
+          "src/main/resources/data/forging_and_magic/recipe/terralite_ore_smelting.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "TerralitePickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_pickaxe.json",
+          "src/main/java/net/mcreator/forgingandmagic/item/TerralitePickaxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/item/TerraliteAxeItem.java",
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_axe.json"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/item/TerraliteSwordItem.java",
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_shovel.json",
+          "src/main/java/net/mcreator/forgingandmagic/item/TerraliteShovelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/item/TerraliteHoeItem.java",
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "TerralitePickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_pickaxe_recipe.json",
+          "src/main/resources/data/forging_and_magic/recipe/terralite_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "TerraliteAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/terralite_axe_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_axe_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "TerraliteSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_sword_recipe.json",
+          "src/main/resources/data/forging_and_magic/recipe/terralite_sword_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "TerraliteShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/terralite_shovel_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "TerraliteHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/terralite_hoe_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/items"
+    },
+    {
+      "name": "TerraliteArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_armor_helmet.json",
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_armor_boots.json",
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_armor_leggings.json",
+          "src/main/resources/assets/forging_and_magic/models/item/terralite_armor_chestplate.json",
+          "src/main/java/net/mcreator/forgingandmagic/item/TerraliteArmorItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/terralite_armor_helmet_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/arrmor"
+    },
+    {
+      "name": "TerraliteArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/terralite_armor_chestplate_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/arrmor"
+    },
+    {
+      "name": "TerraliteArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_armor_leggings_recipe.json",
+          "src/main/resources/data/forging_and_magic/recipe/terralite_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/arrmor"
+    },
+    {
+      "name": "TerraliteArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forging_and_magic/recipe/terralite_armor_boots_recipe.json",
+          "src/main/resources/data/forging_and_magic/advancement/recipes/terralite_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Crafts/arrmor"
+    },
+    {
+      "name": "TerralitePickaxePriRazrushieniiBlokaInstrumientom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_pickaxe_pri_razrushienii_bloka_instrumientom",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/TerralitePickaxePriRazrushieniiBlokaInstrumientomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteAxePriRazrushieniiBlokaInstrumientom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_axe_pri_razrushienii_bloka_instrumientom",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/TerraliteAxePriRazrushieniiBlokaInstrumientomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteSwordPriRazrushieniiBlokaInstrumientom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_sword_pri_razrushienii_bloka_instrumientom",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/TerraliteSwordPriRazrushieniiBlokaInstrumientomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteShovelPriRazrushieniiBlokaInstrumientom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_shovel_pri_razrushienii_bloka_instrumientom",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/TerraliteShovelPriRazrushieniiBlokaInstrumientomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TerraliteHoePriRazrushieniiBlokaInstrumientom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terralite_hoe_pri_razrushienii_bloka_instrumientom",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/TerraliteHoePriRazrushieniiBlokaInstrumientomProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulofMiner",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulof_miner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/item/SoulofMinerItem.java",
+          "src/main/resources/assets/forging_and_magic/models/item/soulof_miner.json"
+        ]
+      }
+    },
+    {
+      "name": "SoulofMinerCuriosBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulof_miner_curios_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/SoulofMinerCuriosBaubleIsEquippedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulofMinerCuriosBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulof_miner_curios_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/SoulofMinerCuriosBaubleIsUnequippedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulofMinerCuriosWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulof_miner_curios_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/forgingandmagic/procedures/SoulofMinerCuriosWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulofMinerCurios",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulof_miner_curios",
+      "metadata": {
+        "files": []
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:TerraliteBlock",
+      "~CUSTOM:TerraliteOre",
+      "~CUSTOM:AquatintBlock",
+      "~CUSTOM:AquatintOre"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:TerraliteBlock",
+      "~CUSTOM:TerraliteOre",
+      "~CUSTOM:AquatintAnvil",
+      "~CUSTOM:AquatintBlock",
+      "~CUSTOM:AquatintOre"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:TerralitePickaxe",
+      "~CUSTOM:AquatintPickaxe"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:TerraliteAxe",
+      "~CUSTOM:AquatintAxe"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:TerraliteSword",
+      "~CUSTOM:AquatintSword"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:TerraliteShovel",
+      "~CUSTOM:AquatintShovel"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:TerraliteHoe",
+      "~CUSTOM:AquatintHoe"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:TerraliteArmor.helmet",
+      "~CUSTOM:AquatintArmor.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:TerraliteArmor.body",
+      "~CUSTOM:AquatintArmor.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:TerraliteArmor.legs",
+      "~CUSTOM:AquatintArmor.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:TerraliteArmor.boots",
+      "~CUSTOM:AquatintArmor.boots"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "~CUSTOM:AquatintIngot"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.forging_and_magic.aquatint_ingot": "Aquatint",
+      "block.forging_and_magic.aquatint_ore": "Aquatint Ore",
+      "block.forging_and_magic.aquatint_block": "Block of Aquatint",
+      "item.forging_and_magic.aquatint_pickaxe": "Aquatint Pickaxe",
+      "item.forging_and_magic.aquatint_axe": "Aquatint Axe",
+      "item.forging_and_magic.aquatint_sword": "Aquatint Sword",
+      "item.forging_and_magic.aquatint_shovel": "Aquatint Shovel",
+      "item.forging_and_magic.aquatint_hoe": "Aquatint Hoe",
+      "item.forging_and_magic.aquatint_armor_helmet": "Aquatint Helmet",
+      "item.forging_and_magic.aquatint_armor_chestplate": "Aquatint Chestplate",
+      "item.forging_and_magic.aquatint_armor_boots": "Aquatint Boots",
+      "item.forging_and_magic.aquatint_armor_leggings": "Aquatint Leggings",
+      "curios.identifier.soul": "Soul",
+      "gui.forging_and_magic.aquatint_anvil_gui.button_craft": "Craft",
+      "block.forging_and_magic.aquatint_anvil": "Aquatint Anvil",
+      "item.forging_and_magic.soul_of_speed": "Soul Of Speed",
+      "item_group.forging_and_magic.souls": "Souls",
+      "item.forging_and_magic.terralite_ingot": "Terralite",
+      "block.forging_and_magic.terralite_ore": "Terralite Ore",
+      "block.forging_and_magic.terralite_block": "Block of Terralite",
+      "item.forging_and_magic.terralite_pickaxe": "Terralite Pickaxe",
+      "item.forging_and_magic.terralite_axe": "Terralite Axe",
+      "item.forging_and_magic.terralite_sword": "Terralite Sword",
+      "item.forging_and_magic.terralite_shovel": "Terralite Shovel",
+      "item.forging_and_magic.terralite_hoe": "Terralite Hoe",
+      "item.forging_and_magic.terralite_armor_helmet": "Terralite Helmet",
+      "item.forging_and_magic.terralite_armor_boots": "Terralite Boots",
+      "item.forging_and_magic.terralite_armor_chestplate": "Terralite Chestplate",
+      "item.forging_and_magic.terralite_armor_leggings": "Terralite Leggings",
+      "item.forging_and_magic.soulof_miner": "Soul of Miner"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/forgingandmagic/init/ForgingAndMagicModCuriosCompat.java",
+      "src/main/resources/data/forging_and_magic/curios/entities/slots.json",
+      "src/main/resources/data/forging_and_magic/tags/item/jei_empty_tag.json",
+      "src/main/java/net/mcreator/forgingandmagic/init/ForgingAndMagicModJeiPlugin.java",
+      "src/main/java/net/mcreator/forgingandmagic/init/ForgingAndMagicModRecipeTypes.java",
+      "src/main/java/net/mcreator/forgingandmagic/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/forgingandmagic/init/ForgingAndMagicModScreens.java",
+      "src/main/java/net/mcreator/forgingandmagic/init/ForgingAndMagicModMenus.java",
+      "src/main/java/net/mcreator/forgingandmagic/init/ForgingAndMagicModBrewingRecipes.java",
+      "src/main/java/net/mcreator/forgingandmagic/init/ForgingAndMagicModBlocks.java",
+      "src/main/java/net/mcreator/forgingandmagic/init/ForgingAndMagicModBlockEntities.java",
+      "src/main/java/net/mcreator/forgingandmagic/init/ForgingAndMagicModItems.java",
+      "src/main/java/net/mcreator/forgingandmagic/ForgingAndMagicMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/forgingandmagic/init/ForgingAndMagicModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/forgingandmagic/client/RenderUtils.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Crafts",
+        "children": [
+          {
+            "name": "Blocks",
+            "children": []
+          },
+          {
+            "name": "items",
+            "children": []
+          },
+          {
+            "name": "arrmor",
+            "children": []
+          },
+          {
+            "name": "weapon",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "forging_and_magic",
+    "modName": "Forging and Magic!",
+    "version": "1.0.0",
+    "author": "Hronosin",
+    "websiteURL": "https://mcreator.net",
+    "license": "GNU Lesser General Public License version 3 (LGPLv3)",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "nexus_compiler",
+      "jei"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.forgingandmagic"
+  },
+  "mcreatorVersion": 202500345720
+}

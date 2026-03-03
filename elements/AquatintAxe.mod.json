@@ -1,0 +1,46 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "aquatint_axe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Aquatint Axe",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
+    "efficiency": 14.0,
+    "attackSpeed": 1.0999999999999999,
+    "enchantability": 56,
+    "damageVsEntity": 17.0,
+    "usageCount": 4566,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:AquatintIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "AquatintAxePriUdariePoSushchnostiInstrumientom"
+    },
+    "onBlockDestroyedWithTool": {
+      "name": "AquatintAxePriRazrushieniiBlokaInstrumientom"
+    }
+  }
+}

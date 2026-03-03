@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "forging_and_magic:aquatint_block"
+    }
+  ],
+  "result": {
+    "id": "forging_and_magic:aquatint_ingot",
+    "count": 9
+  }
+}

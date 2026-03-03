@@ -1,0 +1,58 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "aquatint_anvil_recipe_type",
+    "ingredients": [
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:AquatintIngot"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:AquatintIngot"
+      },
+      {
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "Items.RABBIT_FOOT"
+      },
+      {
+        "value": "Items.NETHER_STAR"
+      }
+    ],
+    "integers": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "strings": [],
+    "recipetype": "AquatintAnvilRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:SoulOfSpeed"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

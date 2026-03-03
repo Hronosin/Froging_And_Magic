@@ -1,0 +1,35 @@
+{
+  "_fv": 79,
+  "_type": "curiosbauble",
+  "definition": {
+    "item": "SoulofMiner",
+    "slotType": "Soul",
+    "slotAmount": 1,
+    "addSlot": false,
+    "enderMask": true,
+    "friendlyPigs": true,
+    "snowWalk": false,
+    "equipSound": {
+      "value": "particle.soul_escape"
+    },
+    "hasModel": false,
+    "baubleModel": "Default",
+    "baubleModelTexture": "",
+    "curioTick": {
+      "name": "SoulofMinerCuriosWhileBaubleIsEquippedTick"
+    },
+    "onEquip": {
+      "name": "SoulofMinerCuriosBaubleIsEquipped"
+    },
+    "onUnequip": {
+      "name": "SoulofMinerCuriosBaubleIsUnequipped"
+    },
+    "helmetModelPart": "Empty",
+    "bodyModelPart": "Empty",
+    "armsModelPartL": "Empty",
+    "armsModelPartR": "Empty",
+    "leggingsModelPartL": "Empty",
+    "leggingsModelPartR": "Empty",
+    "disabledToggles": []
+  }
+}

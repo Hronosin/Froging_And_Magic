@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "forging_and_magic:terralite_ingot"
+    },
+    "b": {
+      "item": "forging_and_magic:aquatint_armor_boots"
+    }
+  },
+  "result": {
+    "id": "forging_and_magic:terralite_armor_boots",
+    "count": 1
+  }
+}

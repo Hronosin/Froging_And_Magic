@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "forging_and_magic:terralite_block",
+    "forging_and_magic:aquatint_ore",
+    "forging_and_magic:terralite_ore",
+    "forging_and_magic:aquatint_block"
+  ]
+}

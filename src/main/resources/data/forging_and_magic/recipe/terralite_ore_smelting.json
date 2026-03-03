@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 20,
+  "cookingtime": 800,
+  "ingredient": {
+    "item": "forging_and_magic:terralite_ore"
+  },
+  "result": {
+    "id": "forging_and_magic:terralite_ingot"
+  }
+}
